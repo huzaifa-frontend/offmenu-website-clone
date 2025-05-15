@@ -1,2 +1,1 @@
-# OFFMENU-Website
- SMIT Assignment 06
+"# OFFMENU website with HTML & CSS"
