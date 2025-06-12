@@ -4,7 +4,7 @@
 
 ## 📋 Overview
 
-This is a **clone of the official OFFMENU website** built for educational and portfolio purposes. The project replicates the layout, structure, and animated design experience of [OFFMENU](https://www.offmenu.design/) using **HTML5** and **CSS3** for scroll-triggered animations.
+This is a **clone of the official OFFMENU website** built for educational and portfolio purposes. The project replicates the layout, structure, and animated design experience of [OFFMENU](https://www.offmenu.design/) using **HTML5** and **CSS3**.
 
 > ⚠️ **Disclaimer:** This website is a front-end **clone project** made purely for educational and non-commercial purposes. All trademarks, logos, and brand names belong to [OFFMENU](https://www.offmenu.design/). No copyright infringement intended.
 
