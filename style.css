@@ -558,112 +558,112 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
- /* ===== RESPONSIVE DESIGN ===== */
-      
-      /* Large tablets and small desktops */
-      @media (max-width: 1024px) {
-        .hero_section_content .hero_section_content_para {
-          font-size: clamp(28px, 5vw, 45px);
-        }
-        
-        .card-container {
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 30px;
-        }
-        
-        .menu-section {
-          padding: clamp(40px, 8vw, 80px);
-        }
-      }
+/* ===== RESPONSIVE DESIGN ===== */
 
-      /* Tablets */
-      @media (max-width: 768px) {
-        .hero_section_logo h1 {
-          font-size: clamp(24px, 6vw, 32px);
-        }
-        
-        .btn_container {
-          flex-direction: column;
-          align-items: center;
-          gap: 15px;
-        }
-        
-        .btn_container .btn {
-          width: 100%;
-          max-width: 300px;
-        }
-        
-        .video-container {
-          max-width: 95%;
-          margin: 2rem auto;
-        }
-        
-        .card-container {
-          grid-template-columns: 1fr;
-          padding: 20px;
-          gap: 25px;
-        }
-        
-        .menu-points ul {
-          grid-template-columns: 1fr;
-        }
-        
-        .menu-heading h3 {
-          font-size: clamp(3rem, 10vw, 6rem);
-        }
-      }
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+  .hero_section_content .hero_section_content_para {
+    font-size: clamp(28px, 5vw, 45px);
+  }
 
-      /* Mobile phones */
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
 
-      /* Extra small devices */
-      @media (max-width: 320px) {
-        .hero_section_logo h1 {
-          font-size: 22px;
-        }
-        
-        .plan-info #dark {
-          font-size: 28px;
-        }
-        
-        .menu-heading h3 {
-          font-size: 2.5rem;
-        }
-      }
+  .menu-section {
+    padding: clamp(40px, 8vw, 80px);
+  }
+}
 
- /* ===== ACCESSIBILITY IMPROVEMENTS ===== */
-      
-      /* Focus styles for keyboard navigation */
-      .btn:focus,
-      .card-button:focus,
-      .plan-info button:focus,
-      .plan-info a:focus {
-        outline: 2px solid #667eea;
-        outline-offset: 2px;
-      }
+/* Tablets */
+@media (max-width: 768px) {
+  .hero_section_logo h1 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
 
-      /* Reduced motion for users who prefer it */
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-        }
-      }
+  .btn_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-      /* High contrast mode support */
-      @media (prefers-contrast: high) {
-        .hero_section {
-          background: #000;
-          color: #fff;
-        }
-        
-        .card {
-          border: 2px solid #000;
-        }
-        
-        .plan-section {
-          border: 2px solid #000;
-        }
-      }
+  .btn_container .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .video-container {
+    max-width: 95%;
+    margin: 2rem auto;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .menu-points ul {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-heading h3 {
+    font-size: clamp(3rem, 10vw, 6rem);
+  }
+}
+
+/* Mobile phones */
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .hero_section_logo h1 {
+    font-size: 22px;
+  }
+
+  .plan-info #dark {
+    font-size: 28px;
+  }
+
+  .menu-heading h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Focus styles for keyboard navigation */
+.btn:focus,
+.card-button:focus,
+.plan-info button:focus,
+.plan-info a:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hero_section {
+    background: #000;
+    color: #fff;
+  }
+
+  .card {
+    border: 2px solid #000;
+  }
+
+  .plan-section {
+    border: 2px solid #000;
+  }
+}
