@@ -576,57 +576,125 @@ body {
   }
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-  .hero_section_logo h1 {
-    font-size: clamp(24px, 6vw, 32px);
-  }
+/* ========== RESPONSIVE FIXES FOR MOBILE DEVICES ========== */
 
-  .btn_container {
+@media (max-width: 768px) {
+  /* Fix card layout */
+  .card-container {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    padding: 10px;
   }
 
-  .btn_container .btn {
+  .card {
     width: 100%;
-    max-width: 300px;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .card-image img {
+    height: auto;
+    max-height: 300px;
   }
 
   .video-container {
-    max-width: 95%;
+    padding-top: 65%; /* Increase aspect ratio height */
+    max-width: 100%;
     margin: 2rem auto;
   }
 
-  .card-container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 25px;
+  /* Hero content adjustments */
+  .hero_section_content .hero_section_content_para {
+    font-size: clamp(24px, 8vw, 36px);
+    line-height: 1.2;
+  }
+
+  .hero_section_content .hero_section_content_title {
+    font-size: clamp(12px, 4vw, 16px);
+  }
+
+  /* Menu section fixes */
+  .menu-section {
+    padding: 40px 20px;
   }
 
   .menu-points ul {
-    grid-template-columns: 1fr;
+    column-count: 1;
+    padding: 0;
+    font-size: 16px;
   }
 
   .menu-heading h3 {
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(3rem, 10vw, 5rem);
+    text-align: center;
   }
-}
 
-/* Mobile phones */
+  /* Buttons */
+  .btn_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-/* Extra small devices */
-@media (max-width: 320px) {
-  .hero_section_logo h1 {
-    font-size: 22px;
+  .btn_container .btn {
+    width: 90%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Plan section */
+  .plan-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .plan-info h6 {
+    font-size: 16px;
   }
 
   .plan-info #dark {
     font-size: 28px;
   }
 
+  .plan-info button {
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 15px;
+  }
+
+  .plan-info p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Footer fix */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image img {
+    max-height: 200px;
+  }
+
+  .hero_section_logo h1 {
+    font-size: 20px;
+  }
+
+  .footer .text {
+    font-size: 16px;
+  }
+
   .menu-heading h3 {
     font-size: 2.5rem;
+  }
+  .video-container {
+    padding-top: 80%; /* Even more height on very small screens */
   }
 }
 
